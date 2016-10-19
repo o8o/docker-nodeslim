@@ -1,0 +1,10 @@
+#!/bin/bash -e
+if [[ "$1" == "-h" ]]; then
+        exec /usr/libexec/s2i/usage
+fi
+
+DEPLOY_DIR=/opt/app
+mkdir -p $DEPLOY_DIR
+
+cp -Rf /tmp/src/. $DEPLOY_DIR
+
