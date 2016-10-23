@@ -1,2 +1,2 @@
 #!/bin/bash -e
-exec /usr/bin/cd /opt/app && /usr/local/bin/node bin/www
+cd /opt/app && exec /usr/local/bin/node bin/www
